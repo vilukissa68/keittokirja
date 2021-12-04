@@ -92,7 +92,7 @@
 
 \RequirePackage[compact]{titlesec}
 \titleformat{\section}
-        {\color{ocre}\normalfont\Huge\bfseries}
+        {\color{ocre}\normalfont\Huge\bfseries\filcenter}
        {\color{ocre}\thesection}{1em}{}
 \renewcommand{\thesection}{}
 
@@ -129,15 +129,15 @@
 
 \newcommand{\recipe}[2]{
     \vspace{3em}\noindent
-    \begin{minipage}[t]{0.33\textwidth}
-        \textbf{Les ingrédients}
+    \begin{minipage}[t]{0.33\paperwidth}
+        \textbf{Ainekset}
         \\[1em]
-        \begin{tabulary}{\textwidth}{rL}
+        \begin{tabulary}{0.33\paperwidth}{rL}
                 #1
         \end{tabulary}
     \end{minipage}
     \begin{minipage}[t]{0.67\textwidth}
-        \textbf{La recette}
+        \textbf{Resepti}
         \begin{enumerate}[label=\color{ocre}\theenumi, font=\bfseries]
             #2 
         \end{enumerate}
@@ -165,5 +165,12 @@
             \itshape#1
         \end{minipage}
     }
+
+\newcommand*{\recipebody}[1]
+{\vspace{30pt}
+  \begin{flushleft}
+    #1
+    \end{flushleft}
+}
 
 \endinput
