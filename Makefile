@@ -1,6 +1,6 @@
 all: main.tex
 		xelatex main.tex
-		makeindex -s main.ist -t main.glg -o main.gls main.glo
+		makeindex -s -t main.glg -o main.gls main.glo
 		biber main
 		xelatex main.tex
 		xelatex main.tex

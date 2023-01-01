@@ -5,15 +5,23 @@
 \usepackage{csvsimple}
 \usepackage{siunitx}
 
+\renewcommand*{\contentsname}{Sisällysluettelo}
+
 \begin{document}
-Tässä kirjassa ruuanlaittoa.
+\tableofcontents
+
 
 \part*{Reseptit}
 \chapter*{Liha}
 Tässä osassa on reseptejä
 
-\input{tex/lihapullat_ruotsi/resepti.tex}
+\input{tex/ruotsalaiset_lihapullat.tex}
+\chapter*{Kana}
 \chapter*{Kala}
 
 \chapter*{Kasvis}
+\chapter*{Kastikkeet}
+\input{tex/caesar_kastike.tex}
+\chapter*{Lisukkeet}
+\chapter*{Jälkiruuat}
 \end{document}
