@@ -1,35 +1,221 @@
-\documentclass[twosides, 11pt]{book}
-\usepackage[T1]{fontenc}
-\usepackage{subfiles}
-\usepackage{cuisine}
-\usepackage{csvsimple}
-\usepackage{siunitx}
+%% https://tex.stackexchange.com/questions/366229/an-aesthetically-pleasing-recipe-book-template
+\documentclass{article}
+\usepackage{fancyhdr,wrapfig,xcolor,graphicx,xparse,fontspec}
+\usepackage[finnish]{babel}
+\usepackage[%
+    %a5paper,
+    papersize={5.5in,8.5in},
+    margin=0.75in,
+    top=0.75in,
+    bottom=0.75in,
+    %twoside
+    ]{geometry}
 
-\renewcommand*{\contentsname}{Sisällysluettelo}
+\newcounter{stepnum}
+
+%% |=====8><-----| %%
+
+
+\makeatletter
+
+%% From Donald Arseneau. Add after the wrapping text. Whew!
+\def\wrapfill{% Just glad it works.
+    \par
+  \ifx\parshape\WF@fudgeparshape
+    \nobreak
+    \ifnum\c@WF@wrappedlines>\@ne
+      \advance\c@WF@wrappedlines\m@ne
+      \vskip\c@WF@wrappedlines\baselineskip
+      \global\c@WF@wrappedlines\z@
+    \fi
+    \allowbreak
+    \WF@finale
+  \fi
+}
+
+
+%% Used for the headnote and in \showit
+%% If the text is small it is placed on one line;
+%% otherwise it is put into a raggedright paragraph.
+\long\def\testoneline#1{%
+  \sbox\@tempboxa{#1}%
+  \ifdim \wd\@tempboxa <0.75\linewidth
+        \begingroup
+            #1\par
+        \endgroup
+  \else
+    \parbox{0.75\linewidth}{\raggedright#1}%
+    \par
+  \fi
+}
+
+\newif\if@mainmatter \@mainmattertrue
+
+%% Borrowed from book.cls
+\newcommand\frontmatter{%
+    \cleardoublepage
+  \@mainmatterfalse
+  \pagenumbering{roman}}
+\newcommand\mainmatter{%
+    \cleardoublepage
+  \@mainmattertrue
+  \pagenumbering{arabic}}
+\makeatother
+
+%% Vary the colors at will
+
+\definecolor{vegcolor}{rgb}{0,0.5,0.2}
+\definecolor{frzcolor}{rgb}{0,0.8,0.8}
+\definecolor{dessertcolor}{rgb}{0.5,0.2,0.1}
+\definecolor{makeaheadcolor}{rgb}{0.5,0.5,0.6}
+
+%% Thanks to alephzero for the excellent start:
+%% #1 [optional headnote]; #2 Title of recipe; #3 [Initial instructions]
+\NewDocumentCommand{\recipe}{o m o}{%
+    \setcounter{stepnum}{0}%
+    \newpage
+    \thispagestyle{fancy}
+    \lhead{}%
+    \chead{}%
+    \rhead{}%
+    \lfoot{}%
+    \rfoot{}%
+    \begin{center}
+    \subsection*{#2}%
+    \end{center}
+    \IfNoValueF{#1}{\begin{center}\testoneline{#1}\end{center}}
+    \IfNoValueF{#3}{\noindent \textbf{\emph{Vinkki:}} \emph{#3}\par\medskip}
+    \smallskip
+}
+\newcommand{\serves}[2][Annosta]{%
+    \chead{#1 #2}}
+\newcommand{\dishtype}[1]{%
+    \rhead{#1}%
+}
+\newcommand{\dishother}[1]{%
+    \lhead{#1}%
+}
+\newcommand{\vegetarian}{%
+    {\large\color{vegcolor}\textbf{V}}%
+}
+\newcommand{\freeze}{%
+    {\large\color{frzcolor}\textbf{F}}%
+}
+\newcommand{\dessert}{%
+    {\large\color{dessertcolor}\textbf{D}}%
+}
+\newcommand{\makeahead}{%
+    {\large\color{makeaheadcolor}\textbf{M}}%
+}
+%% Optional arguments for alternate names for these:
+\newcommand{\preptime}[2][Valmistelu aika]{%
+    \lfoot{#1: #2}%
+}
+\newcommand{\cooktime}[2][Valmistus aika]{%
+    \rfoot{#1: #2}%
+}
+\newcommand{\oventime}[2][Uunissa]{%
+    \rfoot{#1: #2}%
+}
+\newcommand{\temp}[1]{%
+    #1°C}
+%% Optional argument is the width of the graphic, default = 1in
+\newcommand{\showpic}[3][1in]{%
+    \begin{center}
+        \bigskip
+            \includegraphics[width=#1]{#2}%
+            \par
+            \medskip
+            \testoneline{#3}%
+            \par
+    \end{center}%
+}
+
+\def\ucit#1{\uppercase{#1}}
+\begingroup
+    \lccode`~=`\^^M
+    \lowercase{%
+\endgroup%% Ingredient first, then measure; empty measure and/or unit = " . "
+    %% *=column break; amount<space>ingredient
+    \NewDocumentCommand{\ing}{u{ } u{~}}{% %% basically the same as: \def\ing#1 #2~{% requires xparse
+        \noindent
+        \if.#1% Is a heading, a non-ingredient, in the ingredients block
+            \emph{#2}~ % A heading
+        \else % Amounts containing spaces <1 teaspoon> have to use '~' <1~teaspoon>
+            \textbf{\ucit#2, }#1~ %
+        \fi
+    }%
+}%
+
+\NewDocumentEnvironment{step}{}{%
+    \parindent0pt
+    \leftskip0pt
+    \begin{minipage}{\textwidth}
+        \begin{wrapfigure}{r}{0pt}
+            \kern-0.5em
+            \vrule width 1pt\enskip
+            \begin{minipage}{0.5\textwidth}
+                \leftskip=1.5em
+                \parindent=-1.5em
+                \parskip=0.25em
+                \obeylines
+                    \everypar={\ing}
+}{%
+        \wrapfill
+    \end{minipage}
+    \medskip
+}
+
+\NewDocumentCommand{\method}{}{%
+            \end{minipage}
+        \end{wrapfigure}
+        \rightskip0pt plus 2em
+        \parskip0.25em
+        \everypar={\llap{\stepcounter{stepnum}\hbox to 1.5em{\thestepnum.\hfill}}}
+}
+
+\setmainfont{FreeSerif}
+
+\pagestyle{plain}
+\setlength{\intextsep}{0pt}
 
 \begin{document}
+
+\frontmatter
 \tableofcontents
 
+\mainmatter
 
-\part*{Reseptit}
-\chapter*{Liha}
-Tässä osassa on reseptejä
-
+\section{Liha}
+\newpage
 \input{tex/ruotsalaiset_lihapullat.tex}
-\chapter*{Kana}
+
+\newpage
+\section{Kana}
+\newpage
 \input{tex/kfc_kana.tex}
-\chapter*{Kala}
 
-\chapter*{Kasvis}
+\newpage
+\section{Kasvis}
+\newpage
 \input{tex/falafelit.tex}
+\input{tex/pinaattiletut.tex}
 
-\chapter*{Kastikkeet}
+\newpage
+\section{Jälkiruoat}
+\input{tex/kinuski_kakku.tex}
+\newpage
+
+\newpage
+\section{Kastikkeet}
+\newpage
+\input{tex/falafelit.tex}
 \input{tex/caesar_kastike.tex}
 \input{tex/katsu_dippi.tex}
 
-\chapter*{Lisukkeet}
-\chapter*{Jälkiruuat}
-\chapter*{Juomat}
+\newpage
+\section{Juomat}
 \input{tex/kahvi_aeropress_hoffman.tex}
+
 
 \end{document}
