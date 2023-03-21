@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2023.3.20)  21 MAR 2023 16:32
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2023.3.20)  21 MAR 2023 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,15 +331,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 1.
 ) [2] [3]
-(./tex/kfc_kana.tex) [4] [5] (./tex/falafelit.tex) (./tex/pinaattiletut.tex
-[6]) [7] (./tex/kinuski_kakku.tex [8]) [9] [10] (./tex/falafelit.tex)
-(./tex/caesar_kastike.tex [11]) (./tex/katsu_dippi.tex [12]) [13]
+(./tex/kfc_kana.tex) (./tex/curry_japani.tex [4]) [5] [6] (./tex/falafelit.tex)
+(./tex/pinaattiletut.tex [7]) [8] (./tex/kinuski_kakku.tex [9]) [10] [11]
+(./tex/caesar_kastike.tex) (./tex/katsu_dippi.tex [12]) [13]
 (./tex/kahvi_aeropress_hoffman.tex [14]) [15] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5779 strings out of 476156
- 141692 string characters out of 5814963
+ 5782 strings out of 476156
+ 141762 string characters out of 5814963
  522536 words of memory out of 5000000
- 26495 multiletter control sequences out of 15000+600000
+ 26497 multiletter control sequences out of 15000+600000
  469435 words of font info for 50 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  57i,11n,85p,566b,248s stack positions out of 5000i,500n,10000p,200000b,80000s

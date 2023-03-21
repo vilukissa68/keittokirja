@@ -1,7 +1,7 @@
 \babel@toc {finnish}{}\relax 
 \contentsline {section}{\numberline {1}Liha}{1}{}%
 \contentsline {section}{\numberline {2}Kana}{3}{}%
-\contentsline {section}{\numberline {3}Kasvis}{5}{}%
-\contentsline {section}{\numberline {4}Jälkiruoat}{8}{}%
-\contentsline {section}{\numberline {5}Kastikkeet}{10}{}%
+\contentsline {section}{\numberline {3}Kasvis}{6}{}%
+\contentsline {section}{\numberline {4}Jälkiruoat}{9}{}%
+\contentsline {section}{\numberline {5}Kastikkeet}{11}{}%
 \contentsline {section}{\numberline {6}Juomat}{14}{}%
