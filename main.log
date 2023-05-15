@@ -1,14 +1,14 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2023.3.20)  21 MAR 2023 17:09
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2023.3.30)  16 MAY 2023 00:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-04-10>
-(/usr/share/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-07-15>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size10.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count181
@@ -23,8 +23,8 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and foote
 rs
 \f@nch@headwidth=\skip49
 \f@nch@O@elh=\skip50
@@ -36,48 +36,49 @@ rs
 \f@nch@O@olf=\skip56
 \f@nch@O@orf=\skip57
 )
-(/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen139
 \WF@size=\dimen140
 \c@WF@wrappedlines=\count189
-\WF@box=\box50
+\WF@box=\box51
 \WF@everypar=\toks16
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 227.
 
-(/usr/share/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2022/04/12 v5.0l Graphics/color driver for xetex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/04/16 v5.0m Graphics/color driver for xetex
 )
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
@@ -85,74 +86,76 @@ Package graphics Info: Driver file: xetex.def on input line 107.
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
 )
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-04-10 L3 programming layer (loader) 
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-07-15 L3 programming layer (loader) 
 
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2022-04-14 L3 backend support: XeTeX
-\l__color_backend_stack_int=\count190
-\g__color_backend_stack_int=\count191
-\g__graphics_track_int=\count192
-\l__pdf_internal_box=\box51
-\g__pdf_backend_object_int=\count193
-\g__pdf_backend_annotation_int=\count194
-\g__pdf_backend_link_int=\count195
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2022-07-01 L3 backend support: XeTeX
+\g__graphics_track_int=\count190
+\l__pdf_internal_box=\box52
+\g__pdf_backend_object_int=\count191
+\g__pdf_backend_annotation_int=\count192
+\g__pdf_backend_link_int=\count193
 ))
-Package: xparse 2022-01-12 L3 Experimental document command parser
+Package: xparse 2022-06-22 L3 Experimental document command parser
 )
-(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 
-(/usr/share/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count196
-\l__fontspec_language_int=\count197
-\l__fontspec_strnum_int=\count198
-\l__fontspec_tmp_int=\count199
-\l__fontspec_tmpa_int=\count266
-\l__fontspec_tmpb_int=\count267
-\l__fontspec_tmpc_int=\count268
-\l__fontspec_em_int=\count269
-\l__fontspec_emdef_int=\count270
-\l__fontspec_strong_int=\count271
-\l__fontspec_strongdef_int=\count272
+\l__fontspec_script_int=\count194
+\l__fontspec_language_int=\count195
+\l__fontspec_strnum_int=\count196
+\l__fontspec_tmp_int=\count197
+\l__fontspec_tmpa_int=\count198
+\l__fontspec_tmpb_int=\count199
+\l__fontspec_tmpc_int=\count266
+\l__fontspec_em_int=\count267
+\l__fontspec_emdef_int=\count268
+\l__fontspec_strong_int=\count269
+\l__fontspec_strongdef_int=\count270
 \l__fontspec_tmpa_dim=\dimen143
 \l__fontspec_tmpb_dim=\dimen144
 \l__fontspec_tmpc_dim=\dimen145
 
-(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
-(/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/02/26 3.73 The Babel package
-\babel@savecnt=\count273
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/07/20 3.78 The Babel package
+\babel@savecnt=\count271
 \U@D=\dimen146
 \l@unhyphenated=\language87
 
-(/usr/share/texmf-dist/tex/generic/babel/xebabel.def
-(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def))
 \bbl@readstream=\read2
-\bbl@dirlevel=\count274
+\bbl@dirlevel=\count272
 
-(/usr/share/texmf-dist/tex/generic/babel-finnish/finnish.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel-finnish/finnish.ldf
 Language: finnish 2021/02/06 v1.3s Finnish support from the babel system
 Package babel Info: Making " an active character on input line 85.
 ))
-(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/fi/babel-finnish.tex
+Package babel Info: Importing font and identification data for finnish
+(babel)             from babel-fi.ini. Reported on input line 11.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count275
-\Gm@cntv=\count276
-\c@Gm@tempcnt=\count277
+\Gm@cnth=\count273
+\Gm@cntv=\count274
+\c@Gm@tempcnt=\count275
 \Gm@bindingoffset=\dimen147
 \Gm@wd@mp=\dimen148
 \Gm@odd@mp=\dimen149
@@ -163,7 +166,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutvoffset=\dimen154
 \Gm@dimlist=\toks18
 )
-\c@stepnum=\count278
+\c@stepnum=\count276
 
 Package fontspec Info: Font family 'FreeSerif(0)' created for font 'FreeSerif'
 (fontspec)             with options [Ligatures=TeX].
@@ -207,7 +210,7 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 182.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 82.
 
-(/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 182.
@@ -323,25 +326,33 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
  [1
 
 
-] [1
+] (./tex/ruotsalaiset_lihapullat.tex [1
 
-] (./tex/ruotsalaiset_lihapullat.tex
+]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 1.
-) [2] [3]
-(./tex/kfc_kana.tex) (./tex/curry_japani.tex [4]) [5] [6] (./tex/falafelit.tex)
-(./tex/pinaattiletut.tex [7]) [8] (./tex/kinuski_kakku.tex [9]) [10] [11]
-(./tex/caesar_kastike.tex) (./tex/katsu_dippi.tex [12]) [13]
-(./tex/kahvi_aeropress_hoffman.tex [14]) [15] (./main.aux) ) 
+) [2]
+(./tex/kfc_kana.tex [3]) (./tex/curry_japani.tex [4]) [5] (./tex/tofu.tex
+[6]) (./tex/falafelit.tex [7]) (./tex/pinaattiletut.tex [8])
+(./tex/linssikeitto.tex [9]) [10] (./tex/kinuski_kakku.tex [11])
+(./tex/cinnabon.tex [12]
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+ []\TU/FreeSerif(0)/b/n/10 Muscvado sokeria (vaihtoehtoi-
+ []
+
+) (./tex/mokkapalat.tex [13]) (./tex/lapin_pannukakku.tex [14])
+(./tex/vohvelit.tex [15]) [16] (./tex/caesar_kastike.tex [17])
+(./tex/katsu_dippi.tex [18]) [19] (./tex/kahvi_aeropress_hoffman.tex [20])
+[21] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5782 strings out of 476156
- 141762 string characters out of 5814963
- 522536 words of memory out of 5000000
- 26497 multiletter control sequences out of 15000+600000
+ 5854 strings out of 475864
+ 144172 string characters out of 5804336
+ 532212 words of memory out of 5000000
+ 26834 multiletter control sequences out of 15000+600000
  469435 words of font info for 50 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 57i,11n,85p,566b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,11n,85p,584b,244s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (16 pages).
+Output written on main.pdf (22 pages).
