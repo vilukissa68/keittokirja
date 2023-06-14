@@ -10,7 +10,8 @@
     bottom=0.75in,
     %twoside
     ]{geometry}
-
+\usepackage{iwona}
+\renewcommand{\familydefault}{\sfdefault}
 \newcounter{stepnum}
 
 %% |=====8><-----| %%
@@ -174,7 +175,7 @@
         \everypar={\llap{\stepcounter{stepnum}\hbox to 1.5em{\thestepnum.\hfill}}}
 }
 
-\setmainfont{FreeSerif}
+%\setmainfont{FreeSerif}
 
 \pagestyle{plain}
 \setlength{\intextsep}{0pt}
@@ -205,6 +206,7 @@
 
 \newpage
 \section{Jälkiruoat}
+\input{tex/briossi.tex}
 \input{tex/kinuski_kakku.tex}
 \input{tex/cinnabon.tex}
 \input{tex/mokkapalat.tex}
